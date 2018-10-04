@@ -64,3 +64,8 @@ let itemName = "lcd"
 let items = 20;
 console.log(`Własnie sprzedałem jeden ${itemName}. Na stanie jest jeszcze ${--items}`)
 
+
+const cena = 91;
+const podatek = 23;
+
+console.log(`Dzisiejsza cena wynosi ${cena <= 90  ? "90" : "91"} `)
