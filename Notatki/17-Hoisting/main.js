@@ -1,4 +1,3 @@
-
 // CO TO JEST HOISTING - CO DZIEJE SIĘ PO WYWOŁANIU KODU
 
 // Interpreter czyta nasz kod od początku do końca, więc kolejność ma znaczenie, ale hoisting ten proces zaburza.
@@ -13,7 +12,7 @@
 // console.log(typeString);
 // console.log(typeBoolean);
 // console.log(tablica);
-// console.log(obiekt);
+// console.log(obiekt);  
 // console.log(funkcja);
 
 // dwie instrukcje: deklaracja i inicjalizacja (przypisanie wartości)
@@ -23,8 +22,7 @@ var typeBoolean = false;
 
 var tablica = [];
 let obiekt = {};
-const funkcja = function() {
-};
+const funkcja = function () {};
 
 
 
@@ -44,7 +42,7 @@ const funkcja = function() {
 // console.log(funkcjaVar);
 
 function funkcjaNazwana() {
- console.log("jestem");
+    console.log("jestem");
 }
 
 // funkcjaConst() //błąd - nie jest zdefiniowe, bo zmienna const nie podelga hoistingowi
@@ -53,12 +51,12 @@ console.log(funkcjaVar)
 // funkcjaVar() // na tym etapie (przed stworzeniem) będzie zawierała undefined więc tak naprawdę próbujemy tu zrobić coś takiego undefined()
 
 
-const funkcjaConst = function() {
- console.log("ok");
+const funkcjaConst = function () {
+    console.log("ok");
 };
-let funkcjaLet = function() { };
+let funkcjaLet = function () {};
 
-var funkcjaVar = function() { };
+var funkcjaVar = function () {};
 
 
 // Reasumująć hositingowi (przenoszeniu deklaracji na początek zakresu) podlegają funkcje i deklaracje zmiennych, ale tylko za pomocą var. Hoistingowi nie podlega przypisane wartości w zmiennych.
